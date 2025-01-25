@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Montserrat Alternates;
+  background-image: url('image/background/1.jpg');
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.block{
+  padding: 40px;
+  border-radius: 15px;
+  flex: 0 1 550px;
+  backdrop-filter: blur(5px) saturate(250%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(49, 49, 49, 0.66);
+  border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
+.input-container{
+  position: relative;
+  margin-bottom: 18px;
+  width: 100%;
+}
+.input-email, .input-password{
+  width: 100%;
+  padding: 0px 20px;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  color: #fff;
+  background: none;
+}
+.input-container label{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #c5c5c5;
+  pointer-events: none;
+  transition:  0.3s ease all;
+}
+
+.input-email:focus ~ label,
+.input-email:not(:placeholder-shown) ~ label {
+  top: -12px; 
+  left: 10px;
+  font-size: 14px; 
+  padding: 0px 5px;
+  background-color: rgba(221, 221, 221);
+  color: black;
+  
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.input-password:focus ~ label,
+.input-password:not(:placeholder-shown) ~ label{
+  top: -12px; 
+  left: 10px;
+  font-size: 14px; 
+  padding: 0px 5px;
+  background-color: rgba(221, 221, 221);
+  color: black;
+  
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.input-email:focus, .input-password:focus{
+  outline:none;
+  color: white;
+}
+.title__block{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  width: 87.5%;
+
+}
+.checkbox label{
+  font-family: Montserrat Alternates;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 5px;
+  line-height: 18px;
+  user-select: none;
+
+  position: relative;
+  top: 2px;
+}
+.checkbox input{
+  width: 19px;
+  accent-color: rgba(247, 189, 41, 1);
+  cursor: pointer;
+  border: 1px solid rgba(229, 229, 229, 1);
+  padding-top: 10px;
+  border-radius: 5px;
+  appearance: none;
+}
+input[type="checkbox"]:checked {
+  appearance: none;
+  background-image: url('/image/icon/галочка.png');
+  background-size: cover;
+}
+
+.button-block{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button-apply{
+  margin-top: 30px;
+  width: 50%;
+  height: 48px;
+  background: none;
+
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.94px;
+  color: white;
+  
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  transition: background-color 1s;
+}
+.button-apply{
+  cursor: not-allowed;
+}
+.disabled{
+  cursor: pointer;
+  backdrop-filter: blur(3px) saturate(250%);
+  -webkit-backdrop-filter: blur(4px) saturate(100%);
+  background-color: rgba(189, 189, 189, 0.66);
+}
+.enab{
+  pointer-events: none;
+}
