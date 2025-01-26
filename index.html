@@ -3,32 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LoginForm</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/icon/icons8-вход-в-систему,-в-кружке,-стрелка-вправо-64.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="image/icon/icons8-вход-в-систему,-в-кружке,-стрелка-вправо-64.png" sizes="512x512">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   
   <div class="block">
-    <h1 class="title__block">Добро пожаловать!</h1>
+    <h1 class="title__block">Login</h1>
 
     <div class="input-container">
       <input id="input-email" class="input-email" placeholder="" type="text" >
-      <label for="email">lorei31@gmail.com</label>
+      <label for="email">Username</label>
+      <img src="image/icon/icons8-пользователь-48.png" alt="">
     </div>
 
     <div class="input-container">
       <input id="input-password" class="input-password" placeholder="" type="password">
-      <label for="phone">Введите пароль</label>
+      <label for="phone">password</label>
+      <img class="image-lock" src="image/icon/icons8-замок-50.png" alt="">
     </div>
 
     <div class="checkbox">
-      <input name="checkbox" id="check-box" type="checkbox">
-      <label for="check-box">Показать пароль</label>
+      <div class="show-password">
+        <input name="checkbox" id="check-box" type="checkbox">
+        <label for="check-box">Show password</label>
+      </div>
+      <p>Forget Password?</p>
     </div>
 
     <div class="button-block">
-      <button class="button-apply">Войти</button>
+      <button class="button-apply">Login</button>
+    </div>
+
+    <div class="bottom">
+      <p>Don't have an account? <span>Register</span></p>
     </div>
   </div>
   </div>

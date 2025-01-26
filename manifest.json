@@ -1,0 +1,20 @@
+{
+  "name": "Login Form",
+  "short_name": "LF",
+  "icons": [
+    {
+      "src": "image/icon/icons8-вход-в-систему,-в-кружке,-стрелка-вправо-64.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "image/icon/icons8-вход-в-систему,-в-кружке,-стрелка-вправо-64.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "description": "Пример формы фроха на сайт",
+  "orientation": "portrait"
+}
