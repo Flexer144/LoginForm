@@ -151,7 +151,7 @@ body{
 }
 input[type="checkbox"]:checked {
   appearance: none;
-  background-image: url('/image/icon/галочка.png');
+  background-image: url('image/icon/галочка.png');
   background-size: cover;
 }
 
